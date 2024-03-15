@@ -24,11 +24,11 @@ This guide will help anyone replicate my development setup on their own machine 
 ```bash
 git clone https://github.com/brwmaster/dotfiles.git ~/dotfiles
 ```
-1. Navigate to the `dotfiles` directory:
+2. Navigate to the `dotfiles` directory:
 ```bash
 cd ~/dotfiles
 ```
-1. Run the installation script:
+3. Run the installation script:
 ```bash
 ./install.sh
 ```
