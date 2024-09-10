@@ -45,10 +45,8 @@ return {
 				"stylua",
 				"isort",
 				"black",
-				"phpcbf",
 				"eslint_d",
 				"pylint",
-				"phpcs",
 			},
 		})
 	end,
