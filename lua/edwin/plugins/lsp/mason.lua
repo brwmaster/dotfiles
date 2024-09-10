@@ -29,7 +29,7 @@ return {
 				"graphql",
 				"emmet_ls",
 				"astro",
-				"tsserver",
+				"ts_ls",
 				"pyright",
 				"intelephense",
 				"bicep",
