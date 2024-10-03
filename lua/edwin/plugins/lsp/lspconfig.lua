@@ -85,13 +85,6 @@ return {
 					capabilities = capabilities,
 				})
 			end,
-			-- configure astro language server
-			["astro"] = function()
-				lspconfig["astro"].setup({
-					capabilities = capabilities,
-					filetypes = { "astro" },
-				})
-			end,
 			["graphql"] = function()
 				-- configure graphql language server
 				lspconfig["graphql"].setup({
@@ -105,6 +98,8 @@ return {
 					capabilities = capabilities,
 					filetypes = {
 						"html",
+						"typescript",
+						"javascript",
 						"typescriptreact",
 						"javascriptreact",
 						"css",
@@ -112,7 +107,6 @@ return {
 						"scss",
 						"less",
 						"svelte",
-						"astro",
 					},
 				})
 			end,
@@ -131,6 +125,25 @@ return {
 							},
 						},
 					},
+				})
+			end,
+			["volar"] = function()
+				-- configure volar language server
+				lspconfig["volar"].setup({
+					capabilities = capabilities,
+					filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
+					init_options = {
+						vue = {
+							hybridMode = false,
+						},
+					},
+				})
+			end,
+			["ts-ls"] = function()
+				-- configure ts language server
+				lspconfig["tsserver"].setup({
+					capabilities = capabilities,
+					filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact" },
 				})
 			end,
 		})
